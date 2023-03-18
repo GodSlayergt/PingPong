@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    #gamebox {
+      width: 100vw;
+      height: 100vh;
+      background-color: white;
+      overflow: hidden;
+      position: absolute;
+    }
+
+    #rode1 {
+      width: 100px;
+      background-color: purple;
+      height: 20px;
+      position: absolute;
+      left: 50%;
+      border-radius: 10px;
+      top: 8px;
+      padding-left: 30px;
+    }
+
+    #rode2 {
+      width: 100px;
+      background-color: blue;
+      height: 20px;
+      position: absolute;
+      right: 50%;
+      border-radius: 10px;
+      bottom: 0px;
+      padding-left: 30px;
+    }
+
+    #ball {
+      background-color: Red;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+    }
+  </style>
+  <body>
+    <div id="gamebox">
+      <div id="rode1">Rode1</div>
+      <div id="rode2">Rode2</div>
+      <div id="ball"></div>
+    </div>
+  </body>
+  <script src="./src/index.js"></script>
+</html>
